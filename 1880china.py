@@ -17,8 +17,9 @@ class Player:
         self.wallet = wallet
 
 print("\nPerform setup Share round by auctioning out the Private Companies P0 - P7.")
-print("In order of remaining cash, starting from the bottom, enter Player info.")
 
+# Create player list and populate it with Player objects
+print("In order of remaining cash, starting from the bottom, enter Player info.")
 playerList = []
 
 for i in range(PLAYER_COUNT):
@@ -29,4 +30,5 @@ for i in range(PLAYER_COUNT):
     newPlayer = Player(playerName, playerWallet)
     playerList.append(newPlayer)
 
-print(playerList[0].name)
+
+# print(playerList[0].name)
